@@ -13,7 +13,6 @@ public class RingMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //rb.AddForce(Vector3.back * 9.81f);
-        rb.transform.localPosition += Vector3.back * 0.5f;
+        rb.AddForce(Vector3.back * 9.81f);
 	}
 }

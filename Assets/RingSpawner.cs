@@ -21,8 +21,7 @@ public class RingSpawner : MonoBehaviour {
 
     IEnumerator GenerateRing() {
         while(true) {
-            Quaternion rotationAdjust = Quaternion.Euler(90, 0, 0);
-            Instantiate(ring,transform.localPosition,rotationAdjust,transform);
+			Instantiate(ring,transform.localPosition,Quaternion.identity,transform);
             yield return new WaitForSeconds(spawnRate);
         }
     }

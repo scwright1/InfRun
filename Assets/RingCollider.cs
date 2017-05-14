@@ -9,7 +9,7 @@ public class RingCollider : MonoBehaviour {
             Destroy(gameObject);
         }
 
-        if(collision.gameObject.tag == "Player") {
+        else if(collision.gameObject.tag == "Player") {
             Debug.Log("Collided the player with the ring");
         }
     }
